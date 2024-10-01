@@ -26,7 +26,7 @@ def generate_tone_vectors(tone_data):
     return tone_vectors
 
 def get_emotion_vector(text, emo_lex):
-    """Calculates the emotion vector for the gi4ven text"""
+    """Calculates the emotion vector for the given text"""
     input_words = word_pattern.findall(text.lower())
     total_matched_words = 0
     emotion_dict = defaultdict(float)
